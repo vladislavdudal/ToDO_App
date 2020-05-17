@@ -1,0 +1,97 @@
+.TaskEditor {
+    width: 100%;
+    max-width: 600px;
+    padding: 16px;
+    margin: 16px auto;
+    background-color: darkslategray;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.TaskEditor__text {
+    width: 100%;
+    resize: none;
+    height:40px;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    border-radius: 24px;
+    overflow: hidden;
+    cursor: pointer;
+    overflow-y: auto;
+    z-index: 9;
+    background-color: #FFFF8D;
+}
+
+.TaskEditor__date{
+    width: 100%;
+    max-width: 200px;
+    margin: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 24px;
+    cursor: pointer;
+    background-color: #80D8FF;
+}
+
+.TaskEditor__title {
+    font-size: 18px;
+    width: 100%;
+    resize: none;
+    border-radius: 24px;
+    margin: 5px;
+    border: none;
+    font-weight: 500;
+    background-color: #FFD180;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.TaskEditor__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TaskEditor__button {
+    border: 0 none;
+    border-radius: 24px;
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 160px;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 100ms ease-in-out;
+    background: #3ac569;
+    color: white;
+
+    &:hover {
+        opacity: .9;
+        transition: all 100ms ease;
+    }
+
+    &:active {
+        opacity: .75;
+        transform: scale(.97);
+        transition: all 100ms ease;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
