@@ -1,0 +1,89 @@
+.main-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    width:1200px;
+    background-color:white;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+
+.box-header{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 30px;
+    color:darkslategray;
+    text-align: center;
+}
+
+.box-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.form-item{
+    margin-top: 5px;
+    background: transparent;
+    color:darkslategray;
+    height: 45px;
+    text-align: center;
+    font-size: 20px;
+}
+.form-submit{
+    border: 0 none;
+    border-radius: 24px;
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 50px;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 100ms ease-in-out;
+    background: #3ac569;
+    color: white;
+
+    &:hover {
+        opacity: .9;
+        transition: all 100ms ease;
+    }
+
+    &:active {
+        opacity: .75;
+        transform: scale(.97);
+        transition: all 100ms ease;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+.link{
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:darkslategray;
+}
+.link-signup{
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    text-decoration: none;
+    color:darkslategray;
+}
